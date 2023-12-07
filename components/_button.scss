@@ -1,3 +1,37 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+// Button-specific variables
+// … include any button-specific:
+// - mixins
+// - placeholders
+// - functions
+
+/**
+ * Buttons
+ */
+.button {
+  display: block;
+  padding: 1rem;
+  color: $brand-color;
+  // … etc.
+
+  /**
+   * Inlined buttons on large screens
+   */
+}
+
+/**
+ * Icons within buttons
+ */
+.button > svg {
+  fill: currentcolor;
+  // … etc.
+}
+
+/**
+ * Inline button
+ */
+.button--inline {
+  display: inline-block;
+}
