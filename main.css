@@ -7,8 +7,8 @@ body {
 }
 
 /**
- * Clear inner floats
- */
+* Clear inner floats
+*/
 .clearfix::after {
   clear: both;
   content: "";
@@ -21,11 +21,15 @@ body {
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
-  width: 100%; /* 1 */
-  max-width: toEm(1180); /* 1 */
+.container, .container-full {
+  max-width: var(--container);
   margin-inline: auto;
-  padding-inline: 1.25rem;
+  width: calc(100% - 8.75rem);
+  display: block;
+}
+.container-full {
+  width: 100%;
+  display: block;
 }
 
 /**
@@ -59,5 +63,5 @@ body {
 .card {
   font-size: 0.75rem;
   width: 0.75em;
-  height: toEm(320);
+  height: 20em;
 }/*# sourceMappingURL=main.css.map */

@@ -1,10 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
-
 /**
- * Clear inner floats
- */
+* Clear inner floats
+*/
 .clearfix::after {
   clear: both;
   content: '';
@@ -17,23 +16,24 @@
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
-  width: 100%; /* 1 */
-  max-width: $max-width; /* 1 */
-  margin-inline: auto;
-  padding-inline: toRem(20);
-}
-// .wrapper {
-//   max-width: var(--container);
+// .container {
+//   width: 100%; /* 1 */
+//   max-width: $max-width; /* 1 */
 //   margin-inline: auto;
-//   width: calc(100% - 8.75rem);
-//   display: block;
-//   &-full{
-//     @extend .wrapper;
-//     width: 100%;
-//     display: block;
-//   }
+//   padding-inline: toRem(20);
+//   height: map.get($breakpoints,small);
 // }
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  width: calc(100% - 8.75rem);
+  display: block;
+  &-full{
+    @extend .container;
+    width: 100%;
+    display: block;
+  }
+}
 
 /**
  * Hide text while making it readable for screen readers
