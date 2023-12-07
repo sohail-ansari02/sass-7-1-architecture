@@ -1,28 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
-/**
-* Clear inner floats
-*/
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
 
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-// .container {
-//   width: 100%; /* 1 */
-//   max-width: $max-width; /* 1 */
-//   margin-inline: auto;
-//   padding-inline: toRem(20);
-//   height: map.get($breakpoints,small);
-// }
 .container {
   max-width: var(--container);
   margin-inline: auto;
